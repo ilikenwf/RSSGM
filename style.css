@@ -1,0 +1,159 @@
+body {
+	background: #eee url(images/pozadina.gif) repeat-y;
+	color:#666666;
+	font-family: Arial, Sans-Serif;
+	font-size: 70%;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+a {
+	color: #1480CD; 
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #808080;
+	background: #FEF7CD;
+}
+
+p {
+	margin: 0 0 5px 0; 
+	padding: 0 0 0 2px;
+	color:#666666;
+}
+
+.picture {
+	margin-top: 20px;
+	height: 90px;	
+}
+
+h3 {
+	font-size: 150%;
+	font-family: Sans-Serif, Arial;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 0;
+	color: #1480CD;
+}
+
+
+.read_more {
+	margin-top: 10px;
+	padding-top: 4px;
+	text-align: right;
+	padding-right: 9px;	
+	font-size: 90%;
+}
+
+.read_more p {
+	color: #D85C1A;	
+}
+
+#left_column {
+	float: left;
+	width: 130px;
+	margin: 0 0 0 0;
+	padding: 15px 0;
+	background: url(images/lijevo.gif) no-repeat top left;
+	text-align: left;
+}
+
+#left_column p {
+	color: #FBDBCA;
+	padding-left: 10px;
+	margin: 0 0 15px 0;
+}
+
+#left_column a, #left_column a:visited {
+	font-family: Tahoma, Sans-Serif;
+	font-size: 90%; 
+	text-transform: uppercase;
+	font-weight:bold;
+	text-decoration: none; 
+	color:#C0901F; 
+	padding-left: 10px;
+	color: #AFD6F5;
+	display: block;	
+	text-align: left;
+}
+
+#left_column a:hover {
+	color: #FFF;
+	background: url(images/link.gif) no-repeat center right;
+}
+
+#title p {
+	padding: 0 0 3px 7px;
+	margin: 0;
+	text-align: left;
+	font-size: 150%;
+	font-family: Sans-Serif;
+	letter-spacing: -1px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+
+#main {
+	width: 805px;
+	color: #333;
+	line-height: 130%;
+	padding: 0;
+}
+
+#main h3 {
+	margin: 10px 0 5px 0;
+}
+
+
+#right_column {
+	float: right;
+	margin: 3px 0 0 0px;
+	width: 220px;
+	padding: 0 8px 8px 12px;
+	height: auto;
+	background: url(images/clanak.gif) no-repeat top left;
+}
+
+#right_column h3 {
+	margin: 2px 0 5px 0;
+}
+
+#right_column p {
+	color: #D55917;
+}
+	
+.right_title {
+	padding: 10px;
+	background: #FFFFFF url(images/fade.gif) repeat-x bottom left;
+	height: auto;
+}
+
+.info {
+	padding: 5px 10px 5px 10px;
+	margin: 5px 0 0 0;
+	background: #fff url(images/fade.gif) repeat-x bottom left;
+	height: auto;
+	
+}
+
+#middle_column {
+	width: 412px;
+	margin-left: 145px;
+	padding: 0;
+	padding-top: 1px;
+	text-align:justify;
+}
+
+.content_out {
+	margin: 3px 0 0 3px;
+	padding: 0px 10px 10px 12px;
+	background: url(images/clanak.gif) no-repeat;
+}
+
+.content_in {
+	padding: 1px 12px 10px 10px;
+	background: #FFF url(images/fade.gif) repeat-x bottom left;
+	height: auto;
+}
