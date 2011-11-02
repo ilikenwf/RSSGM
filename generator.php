@@ -41,9 +41,9 @@ for($counter=0; $counter < $nr_keywords; $counter++){
 	
 	$page_temp = glob('pages*.php');
 	shuffle($page_temp);
-	$rnd = rand(1, $template_number);
+	$rnd = rand(1, $template_number-1);
 	$template_pages = ($page_temp[$rnd]);
-	echo $template_pages;
+	echo $template_pages." ".$rnd."<br>";
 
 	$keywords_dashes[$counter] = rtrim($keywords_dashes[$counter]);
 	$siteip = "<?php \$clientip = \$_SERVER['REMOTE_ADDR']; ?>";
