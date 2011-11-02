@@ -15,18 +15,18 @@ USE AT YOUR OWN RISK.
 INSTALLATION:
 ------------
 
-edit the config.php file to suit your circumstances.
+Upload the rssgm folder to your website. The folder must be named rssgm.
 
-upload the rssgm folder to your website.
+http://www.yourdomain.com/rssgm/install.php will allow you to edit the config.php file to suit your circumstances.
 
-for the following we'll assume that you have uploaded the rssgm into a folder called 'siteroot'
+For the following we'll assume that you have uploaded the rssgm into a folder called 'siteroot'
 you need to ensure that the 'siteroot' directory is writeable by your webserver this is possibly easiestly achieve by chmod 666 ../siteroot
 create a cache directory siteroot/cache
 chmod the cache directory 666. chmod 666 cache
 
-chmod the article directory 666. chmod 666 rssgm/articles
+`chmod` the article directory 666. `chmod` 666 rssgm/articles
 
-upload your keyword file, one keyword per line to rssgm/keywords/
+Upload your keyword file, one keyword per line to rssgm/keywords/
 
 If you already have articles that you want the scripts to use, upload them to rssgm/articles
 
@@ -38,11 +38,11 @@ Here is an example article format:
 
 <p>Introduction</p><p>There are a number of controversial areas in medicine when it comes to ... ... is certainly one of them.</p><p>The classic  reaction, which is classified as the type reaction, can be elicited by, but this is fairly uncommon.  When we discuss ... are discussing a different, not well-defined, mechanism.</p><p>One of the main progenitors of the ...  is Dr. Doris .  Dr.  was a pediatric ...  who noticed that many ... in her practice had significant physi.....</p>
 
-Otherwise, you can generate scraped articles by pointing your webbrowser to the rssgm/article_gen.php file.
+Otherwise, you can generate scraped articles by pointing your webbrowser to the rssgm/article_gen.php file. For example: http://www.yourdomain.com/rssgm/article_gen.php
 
-now point your web browser at http://www.yourdomain.com/rssgm/generator.php or http://www.yourdomain.com/somedirectory/rssgm/generator.php
+Now point your web browser at http://www.yourdomain.com/rssgm/generator.php or http://www.yourdomain.com/somedirectory/rssgm/generator.php
 
-You should now be good to go.
+Your pages should generate quickly. You are finished.
 
 
 SUPPORT:

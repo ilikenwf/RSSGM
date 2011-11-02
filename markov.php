@@ -27,11 +27,11 @@ output sometimes. That was taken as a Good Thing(TM).
 Modified by jluk for use with rssgm
 */
 
-function markov($combo){
-$G = 2;
-$O = 150;
+function markov($combo,$gran,$numwords){
+$G = $gran;
+$O = $numwords;
 $output ="";
-
+$combo = $combo;
 //Set number of letters per line in output
 $LETTERS_LINE = 65;
 
@@ -94,6 +94,9 @@ $buffer .= ' ' . $textwords[$l];
 //if((strlen($buffer)) > 0) {
 // $output = $buffer;
 //}
+
+
 return $output;
+
 }
 ?>

@@ -1,7 +1,7 @@
 <?PHP
 /* wiki scraper */
 
-if ($_POST['submit']==""){
+if ($_REQUEST['submit']==""){
     print '<P>you\'re not supposed to call this file directly DOH.<br />
 How the fish are we supposed to know what to fetch.</P><P>Why not try the <a href="article_gen.php">Article fetcher interface</a></P>';
     exit;
@@ -9,10 +9,10 @@ How the fish are we supposed to know what to fetch.</P><P>Why not try the <a hre
 
 //$keyword = 'ringtone';
 //first load the variables passed in from the form.
-$keywords = $_POST['keywords'];
-$artnum = $_POST['artnum'];
-$numwords = $_POST['numwords'];
-$gran = $_POST['gran'];
+$keywords = $_REQUEST['keywords'];
+$artnum = $_REQUEST['artnum'];
+$numwords = $_REQUEST['numwords'];
+$gran = $_REQUEST['gran'];
 
 //lets set some defaults
 if ($keywords == ""){
@@ -55,11 +55,11 @@ function fetch($url){
     return $snoop->results;
 
 }
-
+//print_r($keywords);
 foreach ($keywords as $keyword){
 $keyword=urlencode(trim(ltrim($keyword)));
 $Surl = 'http://en.wikipedia.org/wiki/Special:Search?search='.$keyword.'&go=Go';
-
+//print $Surl;
 $wiki = fetchtext ($Surl);
 //print $wiki;
 
@@ -84,14 +84,14 @@ foreach($s[1] as $sa){
 $serps = preg_replace('/\.+/','',$serps);
 $serps = preg_replace('/\-+/','',$serps);
 $serps = strip_tags($serps);
-
+//print $serps;
 //combine serps & wiki
 $combo = $wiki.' '.$serps;
 //now run through markov
 
 require_once('markov.php');
 for ($i=0;$i<$artnum;$i++){
-    $art=markov($combo);
+    $art=markov($combo,$gran,$numwords);
     //write file
     $file = './articles/'.$keyword.$i;
     $fh=fopen($file,'w+');

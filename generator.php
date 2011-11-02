@@ -43,11 +43,11 @@ for($counter=0; $counter < $nr_keywords; $counter++){
 	shuffle($page_temp);
 	$rnd = rand(1, $template_number-1);
 	$template_pages = ($page_temp[$rnd]);
-	echo $template_pages." ".$rnd."<br>";
+	// debug templates echo $template_pages." ".$rnd."<br>";
 
 	$keywords_dashes[$counter] = rtrim($keywords_dashes[$counter]);
 	$siteip = "<?php \$clientip = \$_SERVER['REMOTE_ADDR']; ?>";
-	$site_inc = $siteip."<?php include(\"$site/rssgm/$template_pages?keyword=$keywords_dashes[$counter]&yourip=\$clientip\"); ?>"; 
+	$site_inc = $siteip."<?php include('$site/rssgm/$template_pages?keyword=$keywords_dashes[$counter]&yourip='.\$clientip); ?>"; 
 	
 	$filename = "../".$keywords_dashes[$counter].".php";
 	
@@ -60,7 +60,7 @@ for($counter=0; $counter < $nr_keywords; $counter++){
 
 //--
 $indexip = "<?php \$clientip = \$_SERVER['REMOTE_ADDR']; ?>";
-$index_code = $indexip."<?php include(\"$site/rssgm/$template_index?yourip=\$clientip\"); ?>";
+$index_code = $indexip."<?php include('$site/rssgm/$template_index?yourip='.\$clientip); ?>";
 	
 $index = "../index.php";
 $handle_index = fopen($index, "w");
@@ -79,7 +79,7 @@ fwrite($handle_sitemap_xml, $sitemap_xml_code);
 
 //--
 $sitemapip = "<?php \$clientip = \$_SERVER['REMOTE_ADDR']; ?>";
-$sitemap_code = $sitemapip."<?php include(\"$site/rssgm/$template_sitemap?yourip=\$clientip\"); ?>";
+$sitemap_code = $sitemapip."<?php include('$site/rssgm/$template_sitemap?yourip='.\$clientip); ?>";
 	
 $sitemap = "../sitemap.php";
 $handle_sitemap = fopen($sitemap, "w");

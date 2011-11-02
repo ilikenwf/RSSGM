@@ -1,7 +1,7 @@
 <?php
 
 if( $_thumbs ){
-	$url = "http://feed.peakclick.com/res.php?aff=$_aff&subaff=$_subaff" . ( $keyword_feed != "" ? "&keyword=" . urlencode( $keyword_feed ) : "" ) . "&num=$_numResults&ip=$yourip&thumbs=1";
+	$url = "http://feed.peakclick.com/res.php?aff=$_aff&subaff=$_subaff" . ( $keyword_feed != "" ? "&keyword=" . urlencode( $keyword_feed ) : "" ) . "&num=$_numResults&ip=".$_GET['yourip']."&thumbs=1";
 	$lines = file( $url );
 
 	if( !substr_count( join( "", $lines ), "ERROR:" ) ){
@@ -34,7 +34,7 @@ if( $_thumbs ){
 	}
 }
 else{
-	$url = "http://feed.peakclick.com/res.php?aff=$_aff&subaff=$_subaff" . ( $keyword_feed != "" ? "&keyword=" . urlencode( $keyword_feed ) : "" ) . "&num=$_numResults&ip=$yourip";
+	$url = "http://feed.peakclick.com/res.php?aff=$_aff&subaff=$_subaff" . ( $keyword_feed != "" ? "&keyword=" . urlencode( $keyword_feed ) : "" ) . "&num=$_numResults&ip=".$_GET['yourip'];
 	$lines = file( $url );
 
 	if( !substr_count( join( "", $lines ), "ERROR:" ) ){
