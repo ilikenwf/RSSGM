@@ -58,7 +58,7 @@ $reqfilename = $keyword_dash;
 		<div class="right_title">
 			<h3>Special Offers</h3>
 			<p align=center>
-<?php include("../rssgm/chitika.php"); ?>
+<?php echo chitikaAds("160x600"); ?>
 			</p>
 		</div>
 		<div class="info">
@@ -72,7 +72,7 @@ $reqfilename = $keyword_dash;
 		
 		<div class="content_out">
 			<div class="content_in">
-<?php include("../rssgm/google.php"); ?>
+<?php echo googleAds("300x250_as"); ?>
 
 <p><?php include("../rssgm/articles.php"); ?></p>
 
@@ -110,4 +110,6 @@ $reqfilename = $keyword_dash;
    fwrite($fp, ob_get_contents()); // save the contents of output buffer to the file
    fclose($fp); // close the file
    ob_end_flush(); // Send the output to the browser
+   //call the rss_gen.php
+   include ('rss_gen.php');
 ?>

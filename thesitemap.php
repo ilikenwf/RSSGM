@@ -43,7 +43,7 @@ $keyword_feed = str_replace(" ", "+", $mainkeyword);
 		<div class="right_title">
 			<h3>Sweet Deals</h3>
 			<p align=center>
-<?php include("../rssgm/chitika.php"); ?>
+<?php echo chitikaAds("160x600"); ?>
 			</p>
 		</div>
 		<div class="info">
@@ -57,7 +57,7 @@ $keyword_feed = str_replace(" ", "+", $mainkeyword);
 		
 		<div class="content_out">
 			<div class="content_in">
-<?php include("../rssgm/google.php"); ?>
+<?php echo googleAds("300x250_as"); ?>
 
 <p><?php include("../rssgm/articles.php"); ?></p>
 

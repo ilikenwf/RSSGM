@@ -18,7 +18,7 @@ if ($handle = opendir($dir)) {
    	   || $file == "." 
    	   || $file == ".." 
    	   || $file == "index.php" 
-   	   || $file == "rssgm" 
+   	   || $file == "$rssgmfoldername" 
    	   || $file == ".htaccess" 
    	   || $file == "Cgi Bin" 
    	   || $file == "cgi-bin" 
@@ -27,7 +27,8 @@ if ($handle = opendir($dir)) {
    	   || $file == "phpinfo.php" 
    	   || $file == "sitemap.php" 
    	   || $file == "sitemap.xml" 
-   	   || $file == "robots.txt"
+       	   || $file == "robots.txt"
+           || $file == "feed.rss"
    	   || $file == "text-links.txt"
    	   ){
    		
@@ -41,7 +42,7 @@ if ($handle = opendir($dir)) {
    		$file_name_3 = ucwords($file_name_2); 
    		$file_name = rtrim($file_name_3);
    	
-          $display1 = highlight_string("<a href=\"".$sitexml.$file."\">$file_name</a><br>");
+          $display1 = highlight_string("<a href=\"".$site.$file."\">$file_name</a><br>");
           $display1 .= "<br>";
           $display = str_replace("1", "", $display1);
           

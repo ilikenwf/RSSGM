@@ -1,0 +1,31 @@
+CREDITS:
+--------
+
+If we missed you in the credit file, visit http://www.rssgm.com and let us know.
+
+article_gen.php				jluk
+articles.php				Eiso Kant
+chitika_function.php			ElvisThePelvis, geebandit
+chitika.php				ElvisThePelvis
+clear-cache.php				Eiso Kant
+config.php				Eiso Kant, jluk, ElvisThePelvis
+generator.php				Eiso Kant, ElvisThePelvis
+google_function.php			geebandit
+google.php				Eiso Kant, ElvisThePelvis
+install.php				jluk
+markov.php				http://syndk8.net/forum/index.php/topic,2048.msg18276.html#msg18276
+markov.class.php			newbiemonster, jluk
+originalserp.php			Eiso Kant, ElvisThePelvis
+random.php				Eiso Kant
+rss_gen.php				jluk
+rss.php					Eiso Kant
+searchfeed.php				ElvisThePelvis
+serp.php				ElvisThePelvis
+sitemap.php				Eiso Kant
+sitemap_xml_code.php			Eiso Kant
+Snoopy.class.php			Monte Ohrt <monte@ispi.net>
+text-links.php				Eiso Kant
+wiki*.php				jluk
+ypn.php					ElvisThePelvis
+
+Original template design by: Luka Cvrk, Solucija.com

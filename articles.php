@@ -1,4 +1,5 @@
 <?php
+if ($article_type!="seed"){
 $i = 0;
 
 $dir_articles = "articles/";
@@ -25,7 +26,6 @@ elseif(!is_dir($dir_articles)){
 	echo "";
 }
 
-$path = $dir_articles.$my_array[$rand];
 
 $count2 = count($my_array);
 
@@ -34,6 +34,8 @@ $count = $count2 - 1;
 mt_srand((double)microtime()*1000000);
 
 $rand = mt_rand(0, $count);
+
+$path = $dir_articles.$my_array[$rand];
 
 if(empty($my_array)){
 	echo "";
@@ -51,7 +53,28 @@ $path = $dir_articles.$my_array[$rand];
 	 	echo $article;
 }
 
+}else{
+include ('markov.class.php');
 
+$markov = new Markov("2","300");
+
+   $path = 'seed/';
+   $dh = @opendir($path);
+
+   while (false !== ($file=readdir($dh)))
+   {
+     if (substr($file,0,1)!=".")
+         $files[]=$file;
+   }
+   closedir($dh);
+//randomize teh order of $files - it annoys me that the first 20 words seemt to always be the same
+foreach($files as $article){
+$markov->inputFile($path.$article);
+}
+
+if ($markov->frequencyTable())  // frequency was generated correctly
+print $markov->generate();
+}
 
 
 ?> 

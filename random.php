@@ -11,7 +11,7 @@ if ($handle = opendir($dir_links)) {
    	   || $file == "." 
    	   || $file == ".." 
    	   || $file == "index.php" 
-   	   || $file == "rssgm" 
+   	   || $file == "$rssgmfoldername" 
    	   || $file == ".htaccess" 
    	   || $file == "Cgi Bin" 
    	   || $file == "cgi-bin" 

@@ -2,7 +2,7 @@
 <HTML><HEAD>
 <TITLE>404 Not Found</TITLE>
 </HEAD><BODY>
-<H1>Not Found</H1>/that was not found on this server.<P>
+<H1>Not Found</H1>was not found on this server.<P>
 <P>Additionally, a 404 Not Found
 error was encountered while trying to use an ErrorDocument to handle the request.
 <HR>

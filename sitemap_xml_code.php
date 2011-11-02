@@ -20,7 +20,7 @@ if ($handle = opendir($dir)) {
    	   || $file == "." 
    	   || $file == ".." 
    	   || $file == "index.php" 
-   	   || $file == "rssgm" 
+   	   || $file == "$rssgmfoldername" 
    	   || $file == ".htaccess" 
    	   || $file == "Cgi Bin" 
    	   || $file == "cgi-bin" 
