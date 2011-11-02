@@ -1,9 +1,10 @@
 <?php
 
 $mysitename = "Your Site Name";
-
+$mainkeyword = "mymainkeyword";
 $adsense_pub = "pub-8720587178527143";   // Adsense pub code.						
 $chitika_pub = "marketsformore"; // Chitika pub code
+$chitika_channel = ""; //chitika channel name
 
 #################### SERP.PHP #########################
 
@@ -20,11 +21,11 @@ $_thumbs = 1; # Set to 0 if you want to disable thumbs
 
 $site = "http://"; 
 
-$site .= $HTTP_SERVER_VARS["HTTP_HOST"]; 
+$site .= $_SERVER["HTTP_HOST"]; 
 
 $sitexml = $site."/";
 
-$full = $HTTP_SERVER_VARS["REQUEST_URI"]; 
+$full = $_SERVER["REQUEST_URI"]; 
 
 $dir = dirname($full);
 

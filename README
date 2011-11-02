@@ -1,0 +1,59 @@
+README file for RSSGM.
+
+NOTE: the rssgm project is licensed under the GPL. See http://www.gnu.org/copyleft/gpl.html for details.
+
+WARNINGS:
+--------
+
+Incorrect use of these scripts could get your website banned in the Search Engines.
+It is your responsibility to ensure that you have the relevant permissions for anything you intend to display with these scripts.
+The creators of these scripts WILL NOT accept any responsibility for losses that occur through your use of these scripts.
+
+It is always possible that the scripts could eat your cpu and steal your cornflakes.
+USE AT YOUR OWN RISK.
+
+INSTALLATION:
+------------
+
+edit the config.php file to suit your circumstances.
+
+upload the rssgm folder to your website.
+
+for the following we'll assume that you have uploaded the rssgm into a folder called 'siteroot'
+you need to ensure that the 'siteroot' directory is writeable by your webserver this is possibly easiestly achieve by chmod 666 ../siteroot
+create a cache directory siteroot/cache
+chmod the cache directory 666. chmod 666 cache
+
+chmod the article directory 666. chmod 666 rssgm/articles
+
+upload your keyword file, one keyword per line to rssgm/keywords/
+
+If you already have articles that you want the scripts to use, upload them to rssgm/articles
+
+Here is an example article format:
+
+<h3>Title goes here</h3>
+<p>by fred nerd, MD </p>
+
+
+<p>Introduction</p><p>There are a number of controversial areas in medicine when it comes to ... ... is certainly one of them.</p><p>The classic  reaction, which is classified as the type reaction, can be elicited by, but this is fairly uncommon.  When we discuss ... are discussing a different, not well-defined, mechanism.</p><p>One of the main progenitors of the ...  is Dr. Doris .  Dr.  was a pediatric ...  who noticed that many ... in her practice had significant physi.....</p>
+
+Otherwise, you can generate scraped articles by pointing your webbrowser to the rssgm/article_gen.php file.
+
+now point your web browser at http://www.yourdomain.com/rssgm/generator.php or http://www.yourdomain.com/somedirectory/rssgm/generator.php
+
+You should now be good to go.
+
+
+SUPPORT:
+-------
+
+There is no support offered with these scripts - well what did you expect you ain't paying for them.
+Having said that, there are forums where people who use these scripts congregate.
+
+You could leave a message on the project forums https://sourceforge.net/forum/?group_id=153966
+
+You could check into the irc channel.
+irc.freenode.net channel #rssgm
+
+There is an active and thriving community of RSSGM at Syndk8: http://syndk8.net/forum/index.php/board,63.0.html
