@@ -28,7 +28,7 @@ $full = $HTTP_SERVER_VARS["REQUEST_URI"];
 
 $dir = dirname($full);
 
-$dir = str_replace("/rssgm", "", $dir);
+$dir = str_replace("/rssg", "", $dir);
 
 $site .= $dir;
 
@@ -39,7 +39,9 @@ $nr_links = 25;
 $template_index = "theindex.php";    
 
 $template_pages = "pages.php";
-$template_number = "3";
+$page1template = "pages.php"; // 3 random pages
+$page2template = "pages2.php"; // Add more in generator.php
+$page3template = "pages3.php";
 
 $template_sitemap = "thesitemap.php";  
 

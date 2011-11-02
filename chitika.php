@@ -1,7 +1,7 @@
 <script type="text/javascript"><!--
 ch_client = "<?php echo $chitika_pub; ?>";
-ch_width = 160;
-ch_height = 600;
+ch_width = 250;
+ch_height = 250;
 ch_color_border = "FEF7CD";
 ch_color_title = "1480CD";
 ch_color_text = "#000000";

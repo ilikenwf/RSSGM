@@ -38,12 +38,24 @@ $keywords_spaces = explode("\n", $keyword_list);
 $nr_keywords = count($keywords_dashes);
 
 for($counter=0; $counter < $nr_keywords; $counter++){
+
+	$rnd = rand(1, 3);
+
+	if($rnd == 1){
+
+		$template_pages = $page1template;
+
+	}
+	elseif ($rnd == 2){	
+		
+		$template_pages = $page2template;
 	
-	$page_temp = glob('pages*.php');
-	shuffle($page_temp);
-	$rnd = rand(1, $template_number-1);
-	$template_pages = ($page_temp[$rnd]);
-	echo $template_pages." ".$rnd."<br>";
+	}
+	elseif ($rnd == 3){	
+
+		$template_pages = $page3template;
+	
+	}     
 
 	$keywords_dashes[$counter] = rtrim($keywords_dashes[$counter]);
 	$siteip = "<?php \$clientip = \$_SERVER['REMOTE_ADDR']; ?>";
